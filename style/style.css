@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+  
+  img { 
+    width: 50%;
+    height: auto;
+    float: right;
+    
+  }
+  p
+  {color: blueviolet;
+    background-color: cornflowerblue;
+
+  }
+  ol li 
+  {
+      color: cyan;
+      background-color: darkgoldenrod;
+  }
