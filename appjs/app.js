@@ -101,7 +101,9 @@ while (z > 0) {
   }
 
 
-
+  else if (z == 0) {
+    alert('the correct answer is: 25');
+  }
 
 
 }
