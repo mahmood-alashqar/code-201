@@ -128,9 +128,9 @@ alert('the correct answer is: 25');
 //let teleCom = ['umniah', 'zain', 'orange', 'mada'];
 let question7 = prompt('write one of telecommunications companies in jordan  ');
 
-
+let x = 5;
 for (let i = 0; i < 6; i++) {
-  let x = 6;
+  
   switch (question7) {
 
   case 'umniah':
@@ -154,8 +154,11 @@ for (let i = 0; i < 6; i++) {
     countScore++;
     break;
   default:
-    x--;
+
     alert('your answer is wrong, and there still a ' + x + '  times to try');
+    x--;
+    question7 = prompt('write one of telecommunications companies in jordan  ');
+    continue;
   }
 
 }
