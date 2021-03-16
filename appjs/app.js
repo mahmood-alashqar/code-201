@@ -68,27 +68,27 @@ let question6 = prompt('NOw you should guess the right number of my age and you 
 let z = 4;
 while (z > 0) {
   if (question6 < 15 && question6 >= 1) {
-    alert(' oops too low  you still have ' + z + ' ateempts');
+    alert(' oops too low  you still have ' + z + ' attempts');
     question6 = prompt('guess again');
     z--;
     continue;
   }
   else if (question6 >= 15 && question6 <= 24) {
-    alert('your guess is low you still have ' + z + ' ateempts');
+    alert('your guess is low you still have ' + z + ' attempts');
     question6 = prompt('guess again');
     z--;
     continue;
   }
 
   else if (question6 >= 26 && question6 < 30) {
-    alert('your guess is high you still have ' + z + ' ateempts');
+    alert('your guess is high you still have ' + z + ' attempts');
     question6 = prompt('guess again');
     z--;
     continue;
   }
 
   else if (question6 >= 30) {
-    alert('your guess is too high you still have ' + z + ' ateempts');
+    alert('your guess is too high you still have ' + z + ' attempts');
     question6 = prompt('guess again');
     z--;
     continue;
@@ -125,26 +125,41 @@ alert('the correct answer is: 25');
 
 
 
-
+//let teleCom = ['umniah', 'zain', 'orange', 'mada'];
 let question7 = prompt('write one of telecommunications companies in jordan  ');
 
-let teleCom = ['umniah', 'zain', 'orange', 'mada'];
+
 for (let i = 0; i < 6; i++) {
-  if (question7.toLowerCase() === teleCom[i]) {
+  let x = 6;
+  switch (question7) {
+
+  case 'umniah':
     alert('your answer is correct');
 
     countScore++;
     break;
-  }
-  else {
-    alert('your answer is wrong, and there still a ' + i + '  times to try');
+  case 'zain':
+    alert('your answer is correct');
 
-  }
+    countScore++;
+    break;
+  case 'orange':
+    alert('your answer is correct');
 
+    countScore++;
+    break;
+  case 'mada':
+    alert('your answer is correct');
+
+    countScore++;
+    break;
+  default:
+    x--;
+    alert('your answer is wrong, and there still a ' + x + '  times to try');
+  }
 
 }
 alert('the correct answer is:  umniah, zain, orange, mada ');
-
 
 
 
