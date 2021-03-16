@@ -101,12 +101,14 @@ while (z > 0) {
   }
 
 
-  else if (z == 0) {
-    alert('the correct answer is: 25');
-  }
+
 
 
 }
+
+alert('the correct answer is: 25');
+
+
 
 
 
@@ -138,10 +140,10 @@ for (let i = 0; i < 6; i++) {
     alert('your answer is wrong, and there still a ' + i + '  times to try');
 
   }
-  alert('the correct answer is:  umniah, zain, orange, mada ');
+
 
 }
-
+alert('the correct answer is:  umniah, zain, orange, mada ');
 
 
 
