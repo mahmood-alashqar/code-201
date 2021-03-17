@@ -1,9 +1,8 @@
 'use strict';
 let countScore = 0;
-yesOrNoQuestions();
-guessWhatGame();
-multipleCorrectAnswer();
-function yesOrNoQuestions(){
+
+
+function q1() {
 
   let userName = prompt('Hello sir, please can you enter your name ');
 
@@ -15,11 +14,16 @@ function yesOrNoQuestions(){
     console.log(question1);
 
   }
+
   else if (question1.toLowerCase() === 'no' || question1.toUpperCase() === 'N') {
     alert('your answer is correct ');
     console.log(question1);
     countScore++;
   }
+}
+q1();
+
+function q2() {
   let question2 = prompt('Do I  play games more than tow games ?');
   if (question2.toLowerCase() === 'yes' || question2.toUpperCase() === 'Y') {
     alert('your answer is wrong');
@@ -31,7 +35,10 @@ function yesOrNoQuestions(){
     console.log(question2);
     countScore++;
   }
+}
+q2();
 
+function q3() {
   let question3 = prompt('Do I like a smart Game?');
   if (question3.toLowerCase() === 'yes' || question3.toUpperCase() === 'Y') {
     alert('your answer is correct');
@@ -43,6 +50,10 @@ function yesOrNoQuestions(){
     console.log(question3);
 
   }
+}
+q3();
+
+function q4() {
   let question4 = prompt('Do I living in jordan ?');
   if (question4.toLowerCase() === 'yes' || question4.toUpperCase() === 'Y') {
     alert('your answer is correct');
@@ -54,7 +65,10 @@ function yesOrNoQuestions(){
     console.log(question4);
 
   }
+}
+q4();
 
+function q5() {
   let question5 = prompt('Do I like pizza');
   if (question5.toLowerCase() === 'yes' || question5.toUpperCase() === 'Y') {
     alert('your answer is correct, who dosent! hhhh');
@@ -68,7 +82,9 @@ function yesOrNoQuestions(){
 
   }
 }
-function guessWhatGame(){
+q5();
+
+function q6() {
   let question6 = Number(prompt('NOw you should guess the right number of my age and you have 4 attempts my age is :'));
 
   let z = 4;//number of attempt
@@ -117,22 +133,11 @@ function guessWhatGame(){
 
 }
 
+q6();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-function multipleCorrectAnswer(){
-//let teleCom = ['umniah', 'zain', 'orange', 'mada'];
+function q7() {
+  //let teleCom = ['umniah', 'zain', 'orange', 'mada'];
   let question7 = prompt('write one of telecommunications companies in jordan  ');
 
   let x = 5;// numberof attempt
@@ -174,7 +179,7 @@ function multipleCorrectAnswer(){
 
 }
 
-
+q7();
 
 
 
