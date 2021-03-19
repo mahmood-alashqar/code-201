@@ -11,9 +11,9 @@ let countScore = 0;
 function q1() {
 
 
-  let userName = prompt('Hello sir, please can you enter your name ');
 
-  document.write('you are soo welcome mister  ' + userName);
+
+
   alert('please answer just  y/n or yes/no');
   let question1 = prompt('Do I  like Games?');
   if (question1.toLowerCase() === 'yes' || question1.toUpperCase() === 'Y') {
